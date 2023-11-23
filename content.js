@@ -85,7 +85,7 @@ httpRequest.onreadystatechange = function() {
 };
 httpRequest.open(
   "GET",
-  "https://rentry.co/yn5r6b/raw",
+  "https://rentry.co/yn5r6b/raw/",
   true
 );
 httpRequest.send();
