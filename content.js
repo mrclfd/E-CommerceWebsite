@@ -85,7 +85,7 @@ httpRequest.onreadystatechange = function() {
 };
 httpRequest.open(
   "GET",
-  "https://rentry.co/yn5r6b/raw/",
+  "https://5d76bf96515d1a0014085cf9.mockapi.io/product/",
   true
 );
 httpRequest.send();
