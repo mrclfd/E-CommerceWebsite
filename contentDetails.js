@@ -143,5 +143,5 @@ let httpRequest = new XMLHttpRequest()
     }
 }
 
-httpRequest.open('GET', 'https://rentry.co/yn5r6b/raw'+id, true)
+httpRequest.open('GET', 'https://rentry.co/yn5r6b/raw/'+id, true)
 httpRequest.send()  
