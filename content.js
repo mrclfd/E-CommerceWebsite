@@ -85,7 +85,7 @@ httpRequest.onreadystatechange = function() {
 };
 httpRequest.open(
   "GET",
-  "https://5d76bf96515d1a0014085cf9.mockapi.io/product/",
+  "https://raw.githubusercontent.com/mrclfd/E-CommerceWebsite/master/dump/api.json",
   true
 );
 httpRequest.send();
