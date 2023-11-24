@@ -30,7 +30,7 @@ function dynamicCartSection(ob,itemCounter)
     boxDiv.appendChild(boxh3)
 
     let boxh4 = document.createElement('h4')
-    let h4Text = document.createTextNode('Amount: Rs' + ob.price)
+    let h4Text = document.createTextNode('Total: Rp' + ob.price)
     boxh4.appendChild(h4Text)
     boxDiv.appendChild(boxh4)
 
@@ -54,7 +54,7 @@ totalDiv.id = 'total'
 totalContainerDiv.appendChild(totalDiv)
 
 let totalh2 = document.createElement('h2')
-let h2Text = document.createTextNode('Total Amount')
+let h2Text = document.createTextNode('Jumlah Total')
 totalh2.appendChild(h2Text)
 totalDiv.appendChild(totalh2)
 
@@ -63,7 +63,7 @@ function amountUpdate(amount)
 {
     let totalh4 = document.createElement('h4')
     // let totalh4Text = document.createTextNode(amount)
-    let totalh4Text = document.createTextNode('Amount: Rs ' + amount)
+    let totalh4Text = document.createTextNode('Total: Rp ' + amount)
     totalh4Text.id = 'toth4'
     totalh4.appendChild(totalh4Text)
     totalDiv.appendChild(totalh4)
@@ -83,7 +83,7 @@ let buttonLink = document.createElement('a')
 buttonLink.href = '/orderPlaced.html?'
 buttonTag.appendChild(buttonLink)
 
-buttonText = document.createTextNode('Place Order')
+buttonText = document.createTextNode('Pesanan')
 buttonTag.onclick = function()
 {
     console.log("clicked")
@@ -104,7 +104,7 @@ httpRequest.onreadystatechange = function()
             contentTitle = JSON.parse(this.responseText)
 
             let counter = Number(document.cookie.split(',')[1].split('=')[1])
-            document.getElementById("totalItem").innerHTML = ('Total Items: ' + counter)
+            document.getElementById("totalItem").innerHTML = ('Jumlah Item: ' + counter)
 
             let item = document.cookie.split(',')[0].split('=')[1].split(" ")
             console.log(counter)
@@ -135,7 +135,7 @@ httpRequest.onreadystatechange = function()
         }
 }
 
-httpRequest.open('GET', 'https://5d76bf96515d1a0014085cf9.mockapi.io/product', true)
+httpRequest.open('GET', 'https://raw.githubusercontent.com/mrclfd/E-CommerceWebsite/master/dump/api.json', true)
 httpRequest.send()
 
 
