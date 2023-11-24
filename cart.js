@@ -30,7 +30,7 @@ function dynamicCartSection(ob,itemCounter)
     boxDiv.appendChild(boxh3)
 
     let boxh4 = document.createElement('h4')
-    let h4Text = document.createTextNode('Total: Rp' + ob.price + 'K')
+    let h4Text = document.createTextNode('Total: Rp' + ob.price)
     boxh4.appendChild(h4Text)
     boxDiv.appendChild(boxh4)
 
@@ -63,7 +63,7 @@ function amountUpdate(amount)
 {
     let totalh4 = document.createElement('h4')
     // let totalh4Text = document.createTextNode(amount)
-    let totalh4Text = document.createTextNode('Total: Rp ' + amount + 'K')
+    let totalh4Text = document.createTextNode('Total: Rp ' + amount)
     totalh4Text.id = 'toth4'
     totalh4.appendChild(totalh4Text)
     totalDiv.appendChild(totalh4)
